@@ -11,11 +11,12 @@ body{
     align-content: flex-start;
 }
 .nav {
-    width: 100px;
+    width: 75px;
     order: 0;
     background-color: brown; 
     display: flex;
     flex-wrap: wrap;
+    margin-left: 0px;
     
 }
 .content {
@@ -26,21 +27,41 @@ body{
     display: flex;
     flex-wrap: wrap;
     background-color: bisque;
-    
+    padding: 0;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
 }
-.test {
+.navFoot {
     display: flex;
     flex-wrap: wrap;
     align-self: flex-end;
     background-color: aqua;
     height: 15%;
 }
-.test2{
+.navFootText{
     display: flex;
     flex-wrap: wrap;
-    
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
-.oh {
-    background-color: crimson;
+.navHead{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    background-color: cadetblue;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
 }
 
+.btnNav{
+    width: 75px;
+    height: 40px;
+    text-align: center;
+    padding : 0%;
+}

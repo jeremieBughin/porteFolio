@@ -1,43 +1,67 @@
 <div class="nav">
-    <h1>ola</h1>
+    <div class="navHead">
+                <LienNav
+                    @text="Jérémie"
+                    @value ="Jérémie"
+                    @state={{false}}
+                    @hoverOff={{true}}
+                /> 
+    </div>  
+    
     
     <ul class="menu">
         <li>
            <LienNav
             @text="Home"
-            @action ={{action "showPerson" "Home"}}
             @value ="Home"
+            @image = "/assets/images/maison.png"
+            @state={{true}}
+            @hoverOff={{false}}
         /> 
         </li>
         <li>
            <LienNav
-            @text="About me"
-            @action ={{action "showPerson" "About me"}}
-            @value ="About me"
+            @text="About"
+            @value ="About"
+            @image = "/assets/images/about.png"
+            @state={{true}}
+            @hoverOff={{false}}
         /> 
         </li>
         <li>
            <LienNav
             @text="Skills"
-            @action ={{action "showPerson" "Skills"}}
             @value ="Skills"
+            @image = "/assets/images/skills.png"
+            @state={{true}}
+            @hoverOff={{false}}
         /> 
         </li>
         <li>
            <LienNav
+            @text="Work"
+            @value ="Work"
+            @image = "/assets/images/Work.png"
+            @state={{true}}
+            @hoverOff={{false}}
+        />
+        </li>
+        <li>
+           <LienNav
             @text="Contact"
-            @action ={{action "showPerson" "Contact"}}
             @value ="Contact"
+            @image = "/assets/images/contact.png"
+            @state={{true}}
+            @hoverOff={{false}}
         /> 
         </li>
     </ul>
-    <div class="test">
-        <ul class="test2">
+    <div class="navFoot">
+        <ul class="navFootText">
             <li>coucou</li>
             <li>coucou</li>
             <li>coucou</li>
             <li>coucou</li>
-           
         </ul>
     </div>    
 </div>

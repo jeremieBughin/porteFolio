@@ -1,9 +1,20 @@
-<button 
-  {{on "click" this.handleInteraction}}
+<button class="btnNav"
   value={{@value}}
-  {{on "mouseenter" this.handlerHover }}
->
-  <span>
-    {{@text}}
-  </span>
+  state={{@state}}
+  image = {{@image}}
+  hoverOff={{@hoverOff}}
+  {{on "click" this.handleInteraction }}
+  {{on "mouseenter" this.handlerHoverOn }}
+  {{on "mouseleave" this.handlerHoverOff }}
+  
+> 
+  {{#if this.onButton}}
+    <span>
+      <img src={{@image}}>
+    </span>
+  {{else}}
+    <span>
+      {{@text}}
+    </span>
+  {{/if}}
 </button>
