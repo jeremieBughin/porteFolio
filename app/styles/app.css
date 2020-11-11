@@ -1,0 +1,43 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    min-height: 100vh;
+    display: flex; /* crée un contexte flex pour ses enfants */
+    flex-direction: row; /* affichage horizontal */
+    background-color: blue;
+    align-content: flex-start;
+}
+.nav {
+    width: 100px;
+    order: 0;
+    background-color: brown; 
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.content {
+    background-color: beige;
+    flex: 1 ;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: bisque;
+    
+}
+.test {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    background-color: aqua;
+    height: 15%;
+}
+.test2{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
