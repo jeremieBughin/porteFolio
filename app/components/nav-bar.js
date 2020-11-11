@@ -6,4 +6,8 @@ export default class NavBarComponent extends Component {
   showPerson(person) {
     alert(`The person's name is ${person}!`);
   }
+  @action 
+  hoverButton(){
+      console.log(this.args);
+  }
 }
