@@ -8,7 +8,8 @@ module.exports = {
     sourceType: 'module',
     ecmaFeatures: {
       legacyDecorators: true
-    }
+    },
+    
   },
   plugins: [
     'ember'
@@ -35,7 +36,8 @@ module.exports = {
         'server/**/*.js'
       ],
       parserOptions: {
-        sourceType: 'script'
+        sourceType: 'script',
+        
       },
       env: {
         browser: false,

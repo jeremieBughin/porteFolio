@@ -1,10 +1,31 @@
 <div class="nav">
     <h1>ola</h1>
+    
     <ul class="menu">
-        <li>Accueil</li>
-        <li>About me</li>
-        <li>Skills</li>
-        <li>Contact</li>
+        <li>
+           <LienNav
+            @text="Home"
+            @action ={{action "showPerson" "Home"}}
+        /> 
+        </li>
+        <li>
+           <LienNav
+            @text="About me"
+            @action ={{action "showPerson" "About me"}}
+        /> 
+        </li>
+        <li>
+           <LienNav
+            @text="Skills"
+            @action ={{action "showPerson" "Skills"}}
+        /> 
+        </li>
+        <li>
+           <LienNav
+            @text="Contact"
+            @action ={{action "showPerson" "Contact"}}
+        /> 
+        </li>
     </ul>
     <div class="test">
         <ul class="test2">
@@ -16,6 +37,7 @@
         </ul>
     </div>    
 </div>
+
 
 
 
