@@ -1,2 +1,20 @@
 {{outlet}}
-<h1>Home</h1>
+<div class="contentHome">
+    <h1>
+        Bonjour, <br/>
+        Je suis Jérémie, <br/>
+        Développeur Junior.
+    </h1>
+    <span>Front end / back end dévellopeur.</span>
+
+    <p>
+        <LienNav 
+            @class="btnNavHome"
+            @text="Contactez moi"
+            @value ="contact"
+            @image = "/assets/images/contact.png"
+            @state={{true}}
+            @hoverOff={{false}}
+        /> 
+    </p>
+</div>
