@@ -4,7 +4,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'porte-folio',
     environment,
-    rootURL: '/',
+    rootURL: '/home',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
